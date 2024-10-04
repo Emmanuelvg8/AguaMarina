@@ -1,33 +1,38 @@
 import { Button } from "@nextui-org/react";
-import "@/app/globals.css"
+import Link from "next/link"; 
+import "@/app/globals.css"; 
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div>
-        <Button color="default">
-            Logo Aguamarina
-        </Button>
+          <Image 
+            src="/assets/logos/Logo_2.png" 
+            alt="Logo Aguamarina"
+            width={150} 
+            height={50} 
+          />
       </div>
       <div className="navbar-options">
-        <Button color="primary">
-            Catalogo
-        </Button>  
-        <Button color="secondary">
-            Nosotros
-        </Button>  
-        <Button color="success">
-            Iniciar Sesion
-        </Button>  
-        <Button color="warning">
-            Registrarse
-        </Button>  
-        <Button color="danger">
-            PQRS
-        </Button>  
+        <Button>
+          Catálogo
+        </Button>
+        <Button>
+          Nosotros
+        </Button>
+        <Button>
+          Iniciar Sesión
+        </Button>
+        <Button >
+          Registrarse
+        </Button>
+        <Button >
+          PQRS
+        </Button>
       </div>
     </div>
   );
 }
 
-export default Navbar
+export default Navbar;

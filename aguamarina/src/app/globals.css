@@ -2,25 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html, body {
   height: 100%;
   @apply bg-gray-950 text-white;
+  background-color: #ffffff;
 }
 
 .navbar {
-  @apply flex gap-4 items-center justify-between flex-row bg-gray-700 w-full p-5 rounded-b-2xl;
+  @apply flex gap-4 items-center justify-between flex-row bg-transparent w-full p-5 rounded-b-2xl backdrop-blur-md;
 }
 
 .navbar-options {
   @apply flex flex-wrap gap-4;
 }
 
+.navbar button {
+  @apply transition duration-300 ease-in-out; 
+  background-color: #6afffe;
+  color: black; 
+}
+
+.navbar button:hover {
+  background-color: rgba(0, 255, 191, 0.3); 
+}
+
+.navbar button:focus {
+  outline: none; 
+}
 
 .navbar-dashboard {
-  @apply h-screen w-64 bg-gray-800 text-white flex flex-col items-start p-4 fixed left-0 top-0 rounded-r-3xl
+  @apply h-screen w-64 bg-gray-800 text-white flex flex-col items-start p-4 fixed left-0 top-0 rounded-r-3xl;
 }
 
 .navbar-dashboard-options {
-  @apply flex flex-col gap-6 w-full mt-24
+  @apply flex flex-col gap-6 w-full mt-24;
+}
+
+/*ESTILOS LANDING*/
+
+.section {
+  padding: 4rem 0;
+}
+
+.bg-gradient-default {
+  background: linear-gradient(to right, #6afffe, #4ca1af);
+}
+
+.bg-secondary {
+  background-color: #343a40;
+}
+
+.text-white {
+  color: #000000;
+}
+
+.display-3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.display-4 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
 }
